@@ -1,0 +1,64 @@
+@font-face {
+    font-family: Vazir;
+    src: url("../fonts/vazir.eot");
+    src: url("../fonts/vazir.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/vazir.woff2") format("woff2"),
+        url("../fonts/vazir.woff") format("woff"),
+        url("../fonts/vazir.ttf") format("truetype");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'vazir';
+    outline: none;
+    text-decoration: none;
+}
+
+table{
+    border: none;
+    background: rgb(208, 217, 208);
+    border-radius: .5rem;
+    box-shadow: 15px -10px 15px black;
+}
+table tbody tr:hover {
+    background: rgb(159, 159, 159);
+    color: rgb(255, 255, 255);
+}
+
+button {
+    border: none;
+    background: crimson;
+    border-radius: .5rem;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: rgb(127, 27, 47);
+}
+
+a, a:hover {
+    color: yellow;
+}
+i{
+    cursor: pointer;
+}
+i.fa-user{
+    color:rgb(0, 167, 193);
+}
+i.fa-phone{
+color: rgb(116, 3, 39);
+}
+i.fa-trash{
+    color: red;
+}
+i.fa-edit{
+    color: green;
+}
+.add_accunt{
+    background-color: wheat;
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: 10px;
+    box-shadow: 1rem -1rem 1rem rgb(212, 208, 208);
+}
