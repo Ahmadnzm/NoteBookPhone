@@ -56,6 +56,9 @@ i.fa-edit{
     color: green;
 }
 .add_accunt{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     background-color: wheat;
     border: 1px solid;
     border-radius: 1rem;
