@@ -9,37 +9,46 @@
   <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>اضافه کردن</title>
+  <link rel="shortcut icon" href="images/address-book-icon-23.jpg" type="image/x-icon">
 </head>
 
-<body class="d-flex justify-content-center bg-info text-danger">
-    <div class="add_accunt text-right">
-        <form class="">
-          <div class="mb-2">
-            male: <input type="radio" name="gender">
-            f-mail: <input type="radio" name="gender">
-          </div>
-          <div class="form-group">
-            <label>نام و نام خانوگی <i class="fa fa-user-o"></i></label>
-            <input type="text" class="form-control" placeholder="احمد">
-          </div>
-          <div class="form-group">
-            <label>شماره تلفن <i class="fa fa-book"></i></label>
-            <input type="text" class="form-control" placeholder="009832323232">
-          </div>
-          <div class="form-group">
-            <label>آدرس <i class="fa fa-address-card-o"></i></label>
-            <input type="text" class="form-control" placeholder="ایران">
-          </div>
-          <input type="file" name="avatar" class="my-2 mr-5">
-        </form>
-          <div class="text-center">
-            <button class="btn btn-success">
-              <input class="bg-transparent text-white border-0" type="submit" value="اضافه کردن">
-              <i class="fa fa-plus"></i>
-            </button>
-            <a class="text-info" href="persian.html">صفحه اصلی</a>
-          </div>
+<body class="d-flex justify-content-center">
+  <div class="add_accunt text-right">
+    <form class="">
+      <div class="mb-2 d-flex align-items-center">
+        <div class="ml-3">
+          <label class="mb-0" for="gender">جنسیت:</label>
         </div>
+        <div class="bg-info d-flex align-items-center">
+          مرد: <input type="radio" name="gender" required class="ml-2">
+          زن: <input type="radio" name="gender" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>نام و نام خانوگی <i class="fa fa-user-o"></i></label>
+        <input type="text" class="form-control" placeholder="احمد" required>
+      </div>
+      <div class="form-group">
+        <label>شماره تلفن <i class="fa fa-book"></i></label>
+        <input type="text" class="form-control" placeholder="009832323232" required>
+      </div>
+      <div class="form-group">
+        <label>آدرس <i class="fa fa-address-card-o"></i></label>
+        <input type="text" class="form-control" placeholder="ایران" required>
+      </div>
+      <label for="avatar">تصویر پروفایل:</label>
+      <input type="file" name="avatar" class="my-2 mr-5">
+      <div class="text-center">
+        <button class="btn btn-success">
+          <input class="bg-transparent text-white border-0" type="submit" value="اضافه کردن">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+    </form>
+    <div class="text-center mt-2">
+      <a href="persian.html">صفحه اصلی</a>
+    </div>
+  </div>
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>

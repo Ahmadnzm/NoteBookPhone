@@ -8,15 +8,20 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <link rel="shortcut icon" href="images/address-book-icon-23.jpg" type="image/x-icon">
+  <title>دفترچه تلفن</title>
 </head>
 
-<body dir="rtl" class="d-flex justify-content-center bg-info">
+<body dir="rtl" class="d-flex justify-content-center">
   <div class="mt-5 text-right">
     <h1 class="text-center text-warning mb-3"><i class="fa fa-id-card ml-2"></i>دفترچه تلفن</h1>
+    <div class="form-group text-center">
+      <label for="search" class="text-warning font-weight-bold">جستجوی سریع:</label>
+      <input type="text" class="form-contorol search_box" placeholder="جستجوی اشخاص با نام">
+    </div>
     <table class="table table-bordered text-center">
       <thead>
-        <tr>
+        <tr class="text-danger">
           <th scope="col">نام و نام خانوادگی <i class="fa fa-user"></i></th>
           <th scope="col">عکس پروفایل <i class="fa fa-user"></i></th>
           <th scope="col">شماره تماس <i class="fa fa-phone"></i></th>
@@ -115,12 +120,12 @@
     </table>
     <div class="d-flex justify-content-between">
       <button class="btn btn-primary">
-        <a href="addAccuntFA.html">
+        <a class="text-warning" href="addAccuntFA.html">
           اضافه کردن شخص جدید
         </a>
       </button>
       <button>
-        <a href="en.html">
+        <a class="text-warning" href="en.html">
           EN LANG <i class="fa fa-arrow-left"></i>
         </a>
       </button>
@@ -128,6 +133,7 @@
   </div>
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
