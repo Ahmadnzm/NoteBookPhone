@@ -1,7 +1,8 @@
+let numberPage = document.querySelectorAll(".added_page");
+let currentPage = '';
 $(document).ready(function () {
   $(".search_box").focus();
-  let numberPage = document.querySelector(".added_page");
-  $.getJSON(
+  currentPage = $.getJSON(
     `https://randomuser.me/api/?seed=erfan&results=5&page=${numberPage}`,
     function (data) {
       let results = data.results;
@@ -23,11 +24,11 @@ $(document).ready(function () {
           "</td><td><i class='fa fa-trash'></i> / <i class='fa fa-edit'></i></td><td><i onclick='openContact()' class='eyeModalShow fa fa-eye'></i></td></tr>";
         $("#listcontact").append(html);
       }
-      // let paginated = data.info.page;
-      // console.log(paginated);
     }
   );
 });
+
+
 $(".search_box").on("keyup", function () {
   searchValue = "";
   let searchValue = $(this).val().toLowerCase();
@@ -36,6 +37,7 @@ $(".search_box").on("keyup", function () {
     $(".result_serch").text(searchValue);
   });
 });
+
 
 function openContact() {
   let modalShow = $(".Modal").addClass("modalShow");
@@ -59,10 +61,8 @@ function openContact() {
     });
   }
 }
+
+
 $(".close_modal").click(function () {
   $(".Modal").removeClass("modalShow");
 });
-
-function pagedNewAdd (){
-  
-}
