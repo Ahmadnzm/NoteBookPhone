@@ -90,9 +90,24 @@ i.fa-edit{
     left: 0;
     right: 0;
     bottom: 0;
-    background:rgba(0,0,0,.8);
+    background:rgba(0,0,0,.95);
     z-index: 1000;
 }
 .modalShow{
     display:block;
+}
+.fa-eye{
+    cursor: pointer;
+}
+.result_serch{
+    width: 10%;
+    height: 2.5rem;
+}
+.close_modal{
+    font-size: 2rem;
+    display: inline-block;
+}
+.added_page:hover{
+ background-color: rgb(0, 107, 128);
+ color: #ffffff!important;
 }
